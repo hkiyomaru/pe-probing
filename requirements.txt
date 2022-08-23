@@ -162,6 +162,7 @@ notebook-shim==0.1.0
     # via nbclassic
 numpy==1.23.2
     # via
+    #   pandas
     #   scikit-learn
     #   scipy
     #   transformers
@@ -174,6 +175,8 @@ packaging==21.3
     #   jupyterlab-server
     #   nbconvert
     #   transformers
+pandas==1.4.3
+    # via -r requirements.in
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
@@ -212,9 +215,13 @@ pyparsing==3.0.9
 pyrsistent==0.18.1
     # via jsonschema
 python-dateutil==2.8.2
-    # via jupyter-client
+    # via
+    #   jupyter-client
+    #   pandas
 pytz==2022.2.1
-    # via babel
+    # via
+    #   babel
+    #   pandas
 pyyaml==6.0
     # via
     #   huggingface-hub
